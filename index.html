@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCARD</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Nunito:400,700" rel="stylesheet">
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        
+        h1,h2,h3,h4,h5,h6 {
+            font-family: 'Montserrat',sans-serif;
+        }
+
+        p {
+            font-family: 'Nunito',sans-serif;
+            font-size: 20px;
+            line-height: 30px;
+            color: #6c757d;
+        }
+        .r-p {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        /* Nav */
+        nav.r-nav {
+            background: transparent;
+            padding: 20px 0;
+            transition: .5s all;
+        }
+
+        nav .navbar-brand {
+            font-size: 30px;
+            color:#fff;
+        }
+
+        nav .navbar-nav li a {
+            color: rgba(255,255,255,0.8)!important;
+            font-size: 16px;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+            font-family: 'Nurrito', sans-serif;
+        }
+
+        nav .navbar-nav li {
+            margin-left: 15px;
+        }
+
+        nav.r-nav.stickyadd {
+            background: #fff!important;
+            padding: 15px 0;
+            box-shadow: 0 1px 8px 3px rgba(0,0,0,0.05);
+            transition: .5s all ease-in-out;
+        }
+        nav.stickyadd .navbar-brand {
+            color:#000;
+            font-size: 40px;
+            transition: .5s all;
+        }
+        nav.stickyadd .navbar-nav .nav-link {
+            color: #000 !important;
+        }
+        .navbar .abbr {
+            color:#fff;
+        }
+
+        nav.stickyadd .abbr {
+            color:#000;
+        }
+
+        /* Header */
+        header {
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../images/getcertified.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header-content {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-box {
+            max-width: 700px;
+            color: #fff;
+        }
+
+        .content-box h4{
+            font-size: 30px;
+        }
+
+        .content-box h1{
+            font-size: 52px;
+        }
+
+        .content-box a {
+            color: #fff;
+            text-decoration: none;
+            border: 2px solid #fff;
+            border-radius: 20px;
+            padding: 5px 25px;
+        }
+
+        .content-box a:hover {
+            color:#000;
+            background: #fff;
+            transition: 0.5s all;
+        }
+
+        .content-box p {
+            color: #fff;
+        }
+
+        /* About */
+        .about li a {
+            font-size: 30px;
+            transition: 0.5s all;
+        }
+        
+        .about li a:hover {
+            color: black;
+        }
+
+        /* Programming */
+        .exp-class .progress {
+            height: 10px;
+            border-radius: 20px;
+            font-size: 10px;
+        }
+
+        .progress-bar {
+            background-color: tomato!important;
+        }
+
+        .exp-class label {
+            font-size: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky fixed-top r-nav">
+        <div class="container">
+            <a href="#" class="navbar-brand">Rudra</a>
+            <button class="navbar-toggler" type="button" style="color:white;" data-toggle="collapse" data-target="#navbarId">
+                <span><i class="fas fa-bars abbr"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarId">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#programming" class="nav-link">Programming</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container-fluid header-content">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="content-box">
+                        <h4>HELLO</h4>
+                        <h1>I'M <span class="element"></span></h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, tempora?</p>
+                        <a href="#" class="btn">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="about r-p" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="images/avatar.png" class="img-fluid img-thumbnail" alt="profile picture">
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <h2 class="text-center">About Me</h2>
+                    <h4 class="text-center">My Name Is Berdan</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, corporis!</p>
+                    <p>Deserunt facilis debitis quo? Quae, sapiente? Ipsum officia officiis ullam?</p>
+                    <p>Tenetur nisi doloremque in accusamus alias ea ratione expedita adipisci!</p>
+                    <div>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="exp-class" id="programming">
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <h3>Programming</h3>
+                </div>
+                <div class="col-md-6">
+                    <label>C#</label>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                    <label>MSSQL</label>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                    <label>CSS</label>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    </div>
+                    <label>HTML</label>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">65%</div>
+                    </div>
+                    <label>JAVASCRIPT</label>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">50%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script src="lib/typed.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
